@@ -2,7 +2,7 @@ package labsheet1;
 
 import javax.swing.*;
 
-public class CyclistSponsor {
+public class CyclistSponsor  {
     public static void main(String[] args) {
         String name = JOptionPane.showInputDialog(null,"Enter your name:");
         String distanceCycledAsString = JOptionPane.showInputDialog(null,"Enter the Distance Cycled:");
