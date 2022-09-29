@@ -4,10 +4,12 @@ import javax.swing.*;
 import java.lang.*;
 
 public class ComputerData {
+    public static void main(String[] args) {
 
     String serial = JOptionPane.showInputDialog(null,"Please " +
             "enter the serial number of the computer (<CR> to exit)");
-    if(serial.equals())
+
+    if(serial.equals(true))
     {
         JOptionPane.showInputDialog(null,"Please " +
                 "re-enter the serial number of the computer (<CR> to exit)");
@@ -18,4 +20,6 @@ public class ComputerData {
 
     String processor = JOptionPane.showInputDialog(null,"Please " +
             "enter the processor type");
+    }
 }
+
