@@ -11,7 +11,7 @@ public class Animal {
     //true encapsulation ensured as all 4 attributes are private
   
 	private String type;
-	private String continents[]; //a nested object within the Animal class
+	private String[] continents; //a nested object within the Animal class
 	private double weight;
 	private int age;
 
@@ -22,7 +22,7 @@ public class Animal {
 	}
 
 	//the 4-arg constructor indirectly accessing the 4 attributes via mutators
-	public Animal(String type, String continents[], double weight, int age) {
+	public Animal(String type, String[] continents, double weight, int age) {
 		setType(type);
 		setContinents(continents);
 		setWeight(weight);
@@ -54,7 +54,7 @@ public class Animal {
 		this.type = type;
 	}
 
-	public void setContinents (String continents[]) {    
+	public void setContinents (String[] continents) {
 		//this.continents=continents; //potential breaking of encapsulation
 		if(continents!=null)
 			this.continents = Arrays.copyOf(continents,continents.length);
