@@ -3,19 +3,22 @@ package labsheet6.exercise1;
 import javax.swing.*;
 
 public class TestPerson {
-    public static void main(String[] args) {
+    public static void main(String[] args)
+    {
         String output = "";
+        String firstName,lastName;
 
         Person result1 = new Person();
 
-        output += "Calling the no-argument Computer constructor. " +
-                "The first Computer object details are: \n\n" + result1.toString();
+        output += "Results of the first Person object are: \n\n" + result1;
 
-        Person result2 = new Person("Dell","Laptop",3.25,16,550.99);
+        firstName = JOptionPane.showInputDialog("Please enter the first name of the second person");
+        lastName = JOptionPane.showInputDialog("Please enter the last name of the second person");
 
+        Person result2 = new Person(firstName, lastName);
 
-        output += "\n\nCalling the multi-argument Computer constructor. " +
-                "The second Computer object details are: \n\n" + result2.toString();
+        output += "\n\nResults of the second Person object are: \n\n" + result2;
+
 
         JOptionPane.showMessageDialog(null,output,"Person Class Tester",
                 JOptionPane.INFORMATION_MESSAGE);
