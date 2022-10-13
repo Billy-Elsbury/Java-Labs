@@ -6,10 +6,14 @@ package labsheet5.exercise1;
 
 import javax.swing.*;
 import java.awt.*;
+import labsheet3.exercise1.Computer;
 
 public class TestBook {
     public static void main(String[] args) {
 
+        Computer c1 = new Computer();
+
+        System.out.println(c1.getManufacturer());
 
         String title, ISBN, output = "";
         double price;
