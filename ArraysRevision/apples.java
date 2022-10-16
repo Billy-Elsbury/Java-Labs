@@ -1,5 +1,7 @@
 package ArraysRevision;
 
+//A simple example of an Array
+
 public class apples {
     public static void main(String[] args) {
         String testArray[]=new String[5];

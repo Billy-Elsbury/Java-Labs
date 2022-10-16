@@ -5,6 +5,4 @@ public class Book {
     String author;
     int pages;
     String language;
-
-    //test 3
 }

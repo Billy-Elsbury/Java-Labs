@@ -1,5 +1,8 @@
 package ArraysRevision;
 
+/*A simple Java class to display the contents of an Array in a
+table form using a for loop.*/
+
 public class ArrayTable {
     public static void main(String[] args) {
         System.out.println("Index\tValue");

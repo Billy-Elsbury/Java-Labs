@@ -36,9 +36,8 @@ public class Computer {
     public double getPrice() {
         return price;
     }
-    public void setManufacturer(String manufacturer) {
-        this.manufacturer = manufacturer;
-    }
+
+    public void setManufacturer(String manufacturer) {this.manufacturer = manufacturer;}
     public void setType(String type) {
         this.type = type;
     }
